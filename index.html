@@ -15,6 +15,7 @@
 
 <body>
     <div id="main-wrapper">
+        <!--header-->
         <header class="main_header">
             <img class="header_logo_size" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
             <nav class="header_nav">
@@ -31,18 +32,52 @@
         <main>
             <!--section_search-->
             <section class="search">
-                <header>
-                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </header>
-                <form method="GET" action="#">
-                    <div><i class="fas fa-map-marker-alt"></i></div>
+                    <h2 class="search_title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p class="search_text">En plein centre ville ou en pleine nature</p>  
+                <form  class="search_form" method="GET" action="#">
+                    <div class="search_form_icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
                     <p>
-
-                        <input type="search" name="search" id="search" placeholder="Marseille, France" />
-                        <input type="button" value="Rechercher" />
+                        <input type="search" name="search_form_input" id="search_form_input" placeholder="Marseille, France" />
+                        <input class="search_form_button" type="button" value="Rechercher" />
                     </p>
-                </form>
+                    </form>
+                    <!--filters-->
+                    <div class="search_filter">
+                        <h3>Filtres</h3>
+                        <a class="search_filter_type" href="#">
+                            <div class="search_filter_type_choice">
+                                <i class="fas fa-money-bill-wave search_filter_icon"></i>
+                                <h3>Économique</h3>
+                            </div>
+                        </a>
+                        <a class="search_filter_type" href="#">
+                            <div class="search_filter_type_choice">
+                                <i class="fas fa-child search_filter_icon"></i>
+                                <h3>Familial</h3>
+                            </div>
+                        </a>
+                        <a class="search_filter_type" href="#">
+                            <div class="search_filter_type_choice">
+                                <i class="fas fa-heart search_filter_icon"></i>
+                                <h3>Romantique</h3>
+                            </div>
+                        </a>
+                        <a class="search_filter_type" href="#">
+                            <div class="search_filter_type_choice">
+                                <i class="fas fa-dog search_filter_icon"></i>
+                                <h3>Animaux autorisés</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!--info-->
+                    <div class="search_info">
+                        <div>
+                            <i class="fas fa-info search_info_icon"></i>
+                        </div>    
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
             </section>
             <!--hébergements et les plus populaires-->
             <div>
