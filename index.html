@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
@@ -16,35 +16,36 @@
 <body>
     <div id="main-wrapper">
         <header class="main_header">
-                <img id="header_logo_size" src="../images/logo/Reservia@3x.png" alt="Logo Reservia" />
-                <nav id="header_nav">
-                    <ul id="header_nav_list">
-                        <li class="header_nav_item header_nav_item_hosting"><a class="header_nav_link_hosting"
+            <img class="header_logo_size" src="images/logo/Reservia@3x.png" alt="Logo Reservia" />
+            <nav class="header_nav">
+                <ul class="header_nav_list">
+                    <li class="header_nav_item header_nav_item_hosting"><a class="header_nav_link_hosting"
                             href="#">Hébergements</a></li>
-                        <li class="header_nav_item header_nav_item_activities"><a class="header_nav_link_activities"
+                    <li class="header_nav_item header_nav_item_activities"><a class="header_nav_link_activities"
                             href="#">Activités</a></li>
-                        <li class="header_nav_item header_nav_sign"><a class="header_nav_link_sign" href="#">s'inscrire</a></li>
-                    </ul>
-                </nav>          
+                    <li class="header_nav_item header_nav_sign"><a class="header_nav_link_sign" href="#">s'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main>
             <!--section_search-->
             <section class="search">
                 <header>
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
-            </header>
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </header>
                 <form method="GET" action="#">
                     <div><i class="fas fa-map-marker-alt"></i></div>
                     <p>
-                        
+
                         <input type="search" name="search" id="search" placeholder="Marseille, France" />
                         <input type="button" value="Rechercher" />
                     </p>
                 </form>
             </section>
-            <!--main section-->
-            <section>
+            <!--hébergements et les plus populaires-->
+            <div>
                 <!--section hosting-->
                 <section>
                     <h2>Hébergements à Marseille</h2>
@@ -53,7 +54,7 @@
                 <section>
                     <h2>Les plus populaires</h2>
                 </section>
-            </section>
+            </div>
             <!--section activities-->
             <section>
                 <h2>Activités à Marseille</h2>
@@ -63,4 +64,5 @@
         </footer>
     </div>
 </body>
+
 </html>

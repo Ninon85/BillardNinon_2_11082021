@@ -1,0 +1,68 @@
+/* global */
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+}
+body,#main-wrapper, nav, header{
+    box-sizing: border-box;
+}
+#main-wrapper{
+    margin: auto;
+    width: 100%;
+}
+/* header */
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding: 0 1%;
+}
+/* logo */
+.header_logo_size{
+    width: 120px;
+}
+/* nav*/
+.header_nav{
+    display: flex;
+    align-items: center;
+    width: 35%;
+    margin: 0;
+    padding: 0;
+}
+.header_nav_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header_nav_item{
+    width: 33%;
+    height: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_nav_link_hosting{
+    color: #0065fc;
+}
+.header_nav_link_activities{
+    color: #000000;
+}
+.header_nav_link_sign{
+    color: #0065fc;
+    font-weight: 600;
+}
+.header_nav_list a{
+    text-decoration: none;
+}
+.header_nav_item_hosting{
+    border-top: 2px solid #0065fc;
+}
+.header_nav_item_activities, .header_nav_sign{
+    border-top: 2px solid transparent;
+}
