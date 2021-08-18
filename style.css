@@ -9,7 +9,7 @@ body,#main-wrapper, nav, header{
 }
 #main-wrapper{
     margin: auto;
-    width: 97%;
+    width:1440px
 }
 /* HEADER */
 .main_header{
@@ -33,7 +33,7 @@ body,#main-wrapper, nav, header{
     display: flex;
     justify-content: stretch;
     align-items: center;
-    width: 30%;
+    width: 20%;
     margin-left: auto;
 }
 .main_header_nav_list{
@@ -42,8 +42,6 @@ body,#main-wrapper, nav, header{
     align-items: center;
     width: 100%;
     padding: 0;
-    flex-wrap: wrap;
-    
 }
 .main_header_nav_item{
     display: flex;
@@ -56,7 +54,7 @@ body,#main-wrapper, nav, header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 10%;
     height: 99px;
 }
 .main_header_nav_link_hosting{
@@ -98,6 +96,7 @@ body,#main-wrapper, nav, header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .search_form_icon{
     display: flex;
@@ -132,7 +131,6 @@ body,#main-wrapper, nav, header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%; 
     margin-top: 20px;
 }
@@ -164,6 +162,7 @@ body,#main-wrapper, nav, header{
     background-color: #deebff;
     width: 40px;
     height: 40px;
+    font-size: 1em;
     margin: 0 10px 0 0;
     border-radius: 100%;
 }
@@ -188,10 +187,9 @@ body,#main-wrapper, nav, header{
 /* HEBERGEMENTS A MARSEILLE ET LES PLUS POPULAIRES */
 .container_hosting_n_Pop{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    flex-wrap: wrap;
 }
 /* STYLE DES LIENS DE LA SECTION HEBERGEMENTS/LES PLUS POPULAIRES */
 .container_hosting_link_card,.container_most_popular_link-card{
@@ -221,23 +219,25 @@ body,#main-wrapper, nav, header{
     justify-content: space-around;
     align-items: center;
     height: 650px;
-    margin-right: 2%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    flex: 2;
-    
+    flex: 2; 
+    margin-right: 5%;
+}
+#container_hosting h2{
+    margin-bottom: 0;
 }
 .container_hosting_title{
     display: flex;
-    width: 90%;
+    width: 94%;
 }
 .container_hosting_cards{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 85%;
-    width: 90%;
+    height: 75%;
+    width: 94%;
 }
 
 .container_hosting_link_card{
@@ -246,30 +246,40 @@ body,#main-wrapper, nav, header{
     justify-content: flex-start;
     align-items: center;
     width: 30%;
-    height: 45%;
+    height: 200px;
     background-color: #ffffff;
     border-radius: 20px;
-    padding: 5px;
+    padding: 4px;
 }
 .container_hosting_info{
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    justify-content: flex-start;
     width: 100%;  
-    height: auto;
-    
 }
+.container_hosting_info_name{
+    padding-left: 6px;
+}
+.container_hosting_info_name h3{
+    margin: 7px 0;
+
+}
+.container_hosting_info_name p{
+    margin: 0px 0 7px 0;
+}
+
 .container_hosting_info_pic{
     object-fit: cover;
     width: 100%;
-    height: 114px;
+    height: 116px;
     border-radius: 20px 20px 0 0;
 }
+
 .hosting_grading{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     
 }
 .see_more{
@@ -281,6 +291,7 @@ body,#main-wrapper, nav, header{
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    
 }
 /* LES PLUS POPULAIRES */
 .container_most_popular{
@@ -291,23 +302,29 @@ body,#main-wrapper, nav, header{
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 650px;
-    flex: 1;
-   
+    flex: 0.85;
+}
+.container_most_popular h2{
+    margin-bottom: 0;
 }
 .container_most_popular_title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 55%;
+    width: 84%;
+}
+.most_pop_icon{
+    margin-top: 19.92px;
+    font-size: 1.3em;
+
 }
 .container_most_popular_cards{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 85%;
-    
-   
+    width: 84%;
 }
 .container_most_popular_link-card{
     display: flex;
@@ -316,8 +333,8 @@ body,#main-wrapper, nav, header{
     background-color: #ffffff;
     border-radius: 20px;
     padding: 4px;
-    width: 55%;
-    min-height: 30%;
+    width: 96%;
+    height: 25%;
     
 }
 .container_most_popular_info{
@@ -331,9 +348,10 @@ body,#main-wrapper, nav, header{
     flex-direction: column;
     justify-content: space-around;
     align-items:flex-start;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-left: 30px;
+    
     height: 100%;
+    width: 50%;
 }
 .container_most_popular_info_pic{
     height: 100%;
