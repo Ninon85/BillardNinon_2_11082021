@@ -3,6 +3,7 @@ body{
     font-family: 'Raleway', sans-serif;
     background-color: #ffffff;
     font-size: 1em;
+    margin: 0;
 }
 body,#main-wrapper, nav, header{
     box-sizing: border-box;
@@ -15,7 +16,7 @@ body,#main-wrapper, nav, header{
 .main_header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 /* LOGO */
@@ -23,7 +24,8 @@ body,#main-wrapper, nav, header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 7%;
+    align-self: center;
+    width: 7%
 }
 .main_header_logo_size{
     width: 100%;
@@ -32,16 +34,17 @@ body,#main-wrapper, nav, header{
 .main_header_nav{
     display: flex;
     justify-content: stretch;
-    align-items: center;
+    align-items: flex-start;
     width: 20%;
     margin-left: auto;
 }
 .main_header_nav_list{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     padding: 0;
+    margin: 0;
 }
 .main_header_nav_item{
     display: flex;
@@ -216,11 +219,12 @@ body,#main-wrapper, nav, header{
 #container_hosting{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     height: 650px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding: 2% 3% ;
     flex: 2; 
     margin-right: 5%;
 }
@@ -229,15 +233,14 @@ body,#main-wrapper, nav, header{
 }
 .container_hosting_title{
     display: flex;
-    width: 94%;
 }
 .container_hosting_cards{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    height: 75%;
-    width: 94%;
+    height: 500px;
+   /* width: 94%;*/
 }
 
 .container_hosting_link_card{
@@ -284,24 +287,25 @@ body,#main-wrapper, nav, header{
 }
 .see_more{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 90%;
+    
+    
     border: none;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    margin-bottom: 19.92px;
     
 }
 /* LES PLUS POPULAIRES */
 .container_most_popular{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 650px;
+    padding: 2% 3%;
     flex: 0.85;
 }
 .container_most_popular h2{
@@ -311,7 +315,7 @@ body,#main-wrapper, nav, header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 84%;
+    width: 100%;
 }
 .most_pop_icon{
     margin-top: 19.92px;
@@ -321,10 +325,8 @@ body,#main-wrapper, nav, header{
 .container_most_popular_cards{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
     height: 85%;
-    width: 84%;
 }
 .container_most_popular_link-card{
     display: flex;
@@ -349,7 +351,6 @@ body,#main-wrapper, nav, header{
     justify-content: space-around;
     align-items:flex-start;
     padding-left: 30px;
-    
     height: 100%;
     width: 50%;
 }
