@@ -1,9 +1,9 @@
 /* GLOBAL */
 
-body{
+html,body{
     font-family: 'Raleway', sans-serif;
     background-color: #ffffff;
-    font-size: 1em;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -40,7 +40,7 @@ body{
     display: flex;
     justify-content: stretch;
     align-items: flex-start;
-    width: 20%;
+    width: 18em;
     margin-left: auto;
 }
 
@@ -85,14 +85,14 @@ body{
     color: #0065fc;
     font-weight: 600;
 }
-
-.main_header_nav_item_hosting{
+/* CSS ANIMATION */
+.main_header_nav_item_hosting:hover{
     border-top: 2px solid #0065fc;
 }
-
-.main_header_nav_item_activities, .main_header_sign{
-    border-top: 2px solid transparent;
+.main_header_nav_item_activities:hover, .main_header_sign:hover{
+    border-top: 2px solid #0065fc;
 }
+/*++++++++++*/
 
 /* SECTION SEARCH */
 
@@ -126,18 +126,27 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
-    width: 40px;
+    width: 2.5em;
     border-radius: 10px 0 0 10px;
-    height: 45px;
+    height: 2.81em;
+    font-size: 1rem; 
 }
 
 #search_form_input{
     border: none;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
-    height: 45px;
-    padding: 1px 10px;
+    height: 2.81em;
+    padding-left: 0.625em;
+    font-size: 1rem;
+    
 }
+/* CSS ANIMATION */
+#search_form_input:focus{
+    background-color: #F2F2F2 ;
+    outline: 2px outset #0065fc;
+}
+/*++++++++++*/
 
 #search_form_input::placeholder{
     color: #000000;
@@ -149,8 +158,11 @@ body{
     background-color: #0065fc;
     border-radius: 0 10px 10px 0;
     color: #ffffff;
-    height: 45px;
-    width: 90px;    
+    height: 2.81em;
+    padding: 0.31em;
+    width: auto;
+    font-size: 1rem;  
+    cursor: pointer;
 }
 
 /* FILTERS */
@@ -182,9 +194,14 @@ body{
     align-items: center;
     border: 2px solid #F2F2F2;
     border-radius: 30px;
-    padding-right: 20px;
-    height: 40px;
+    padding-right: 1em;
+    height: 2.5em;
 }
+/* CSS ANIMATION */
+.search_filter_type_choice:hover{
+    box-shadow: 3px 3px 10px #0065fc ;
+}
+/*++++++++++*/
 
 .search_filter_icon{
     display: flex;
@@ -192,8 +209,8 @@ body{
     align-items: center;
     color: #0065fc;
     background-color: #deebff;
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     font-size: 1em;
     margin: 0 10px 0 0;
     border-radius: 100%;
@@ -205,6 +222,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 30px;
 }
 
 .search_info_icon{
@@ -214,8 +232,8 @@ body{
     color: #0065fc;
     background-color: #ffffff;
     margin: 0 5px 0 0;
-    width: 20px;
-    height: 20px;
+    width: 1.25em;
+    height: 1.25em;
     border-radius: 100%;
     border: 2px solid #F2F2F2;
 }
@@ -280,22 +298,19 @@ body{
 #container_hosting{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
     height: 650px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 2% 3%;
+    padding: 0 3%;
     flex: 2; 
     margin-right: 5%;
 }
 
-#container_hosting h2{
-    margin-bottom: 0;
-}
-
 .container_hosting_title{
     display: flex;
+    width: 100%;
 }
 
 .container_hosting_cards{
@@ -304,6 +319,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     height: 75%;
+    width: 100%;
 }
 
 .container_hosting_link_card{
@@ -311,13 +327,19 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 245px;
+    width: 30%;
     height: 40%;
     background-color: #ffffff;
     border-radius: 20px;
     padding: 4px;
     box-shadow: 2px 2px 10px #cecece;
 }
+/* CSS ANIMATION */
+.container_hosting_link_card:hover{
+    flex-grow: 0.3;
+    box-shadow: 3px 3px 10px #0065fc ;
+}
+/*++++++++++*/
 
 .container_hosting_info{
     display: flex;
@@ -353,6 +375,7 @@ body{
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
+    margin-top: 25px;
 }
 
 /* MOST POPULAR*/
@@ -360,24 +383,19 @@ body{
 .container_most_popular{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 650px;
-    padding: 2% 3%;
-    flex: 0.85;
-}
-
-.container_most_popular h2{
-    margin-bottom: 0;
+    flex: 1;
 }
 
 .container_most_popular_title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 .most_pop_icon{
@@ -388,8 +406,9 @@ body{
 .container_most_popular_cards{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 85%;
+    width: 90%;
 }
 
 .container_most_popular_link-card{
@@ -399,10 +418,15 @@ body{
     background-color: #ffffff;
     border-radius: 20px;
     padding: 4px;
-    width: 96%;
     height: 25%;
     box-shadow: 2px 2px 10px #cecece;
 }
+/* CSS ANIMATION */
+.container_most_popular_link-card:hover{
+    flex-grow: 0.3;
+    box-shadow: 3px 3px 10px #0065fc ;
+}
+/* ++++++++++*/
 
 .container_most_popular_info{
     display: flex;
@@ -430,7 +454,7 @@ body{
 
 /* SECTION ACTIVITIES */
 
-.activities{
+#activities{
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -461,6 +485,11 @@ body{
     text-decoration: none;
     color: #000000;
 }
+/* ANIMATION CSS */
+.activities_link_width:hover{
+    box-shadow: 3px 3px 10px #0065fc ;
+}
+/*++++++++++*/
 
 /* SIZES CARDS "BIGGER" */
 
@@ -556,6 +585,14 @@ body{
     background-color: #F2F2F2;
     height: 220px;
 }
+/* ANIMATION CSS */
+.main_footer:hover{
+    background-color: rgba(0, 101, 252, 0.7);
+}
+.main_footer:hover a{
+    color: #ffffff;
+}
+/*++++++++++*/
 
 .main_footer_container{
     margin-left: 50px;
@@ -581,7 +618,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*height: 28.62%;*/
     height: 30%;
 }
 .main_footer_container_list_about{
@@ -590,7 +626,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*height: 57.24%;*/
     height: 70%;
 }
 .main_footer_container_list a, .main_footer_container_list_about a{
@@ -600,3 +635,4 @@ body{
 .main_footer_container_category h2{
     margin-top: 0;
 }
+
