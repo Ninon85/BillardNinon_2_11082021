@@ -1,4 +1,5 @@
 # BillardNinon_2_11082021
+ https://ninon85.github.io/BillardNinon_2_11082021/
 Fonctionnalités
 
 Les usagers pourront rechercher des hébergements dans la ville de leur choix. Le champ de recherche est donc un champ de saisie, dont le texte peut être édité par l’usager. En revanche, à ce stade, le bouton de recherche ne sera pas fonctionnel.
