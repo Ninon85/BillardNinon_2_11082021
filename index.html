@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="all and (max-device-width: 480px)">
     <title>Reservia</title>
 </head>
 
@@ -39,13 +40,14 @@
                 <h2 class="search_title">Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p class="search_text">En plein centre ville ou en pleine nature</p>
                 <form class="search_form" method="GET" action="#">
-                    <div class="search_form_icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
                     <p>
+                        <div class="search_form_icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
                         <input type="search" name="search_form_input" id="search_form_input"
                             placeholder="Marseille, France" />
-                        <input class="search_form_button" type="button" value="Rechercher" />
+                        <input class="search_form_button" type="button" value="Rechercher"/>
+                        <input class="search_form_button_icon" type="button" value="&#xf002;"/>
                     </p>
                 </form>
                 <!--filters-->
@@ -78,7 +80,7 @@
                 </div>
                 <!--info-->
                 <div class="search_info">
-                    <div>
+                    <div class="search_info_container_icon">
                         <i class="fas fa-info search_info_icon"></i>
                     </div>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -342,7 +344,7 @@
         <footer class="main_footer">
             <section class="main_footer_container">
                 <div class="main_footer_container_category">
-                    <h2>À propos</h2>
+                    <h2>A propos</h2>
                     <ul class="main_footer_container_list_about">
                         <li><a href="#"> Fonctionnement du site</a></li>
                         <li><a href="#"> Conditions générales de vente</a></li>

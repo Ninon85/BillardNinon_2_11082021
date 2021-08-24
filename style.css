@@ -6,7 +6,9 @@ html,body{
     font-size: 16px;
     margin: 0;
 }
-
+*{
+    box-sizing: border-box;
+}
 #main-wrapper{
     margin: auto;
     width: 1440px;
@@ -110,15 +112,14 @@ html,body{
     margin-bottom: 0;
 }
 
-.search_text{
-    margin-bottom: 8px;
-}
 
 .search_form{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
+    width: 100%;
+    
 }
 
 .search_form_icon{
@@ -164,6 +165,9 @@ html,body{
     font-size: 1rem;  
     cursor: pointer;
 }
+.search_form_button_icon{
+    display: none;
+}
 
 /* FILTERS */
 
@@ -172,7 +176,7 @@ html,body{
     justify-content: flex-start;
     align-items: center;
     width: 100%; 
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
 .search_filter_title{
@@ -221,21 +225,31 @@ html,body{
 .search_info{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 30px;
 }
 
+/* CONTAINER ICON */
+.search_info_container_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 1em 1em 0 0;
+    
+}
+/* ICON i */
 .search_info_icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0065fc;
-    background-color: #ffffff;
-    margin: 0 5px 0 0;
     width: 1.25em;
     height: 1.25em;
     border-radius: 100%;
+    background-color: #ffffff;
     border: 2px solid #F2F2F2;
+    color: #0065fc;
+    font-size: 1em;
 }
 
 /* HOSTING IN MARSEILLE AND MOST POPULAR */
@@ -243,9 +257,9 @@ html,body{
 .container_hosting_n_Pop{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-left: 50px;
     margin-right: 50px;
+    width: 100%;
 }
 
 /* STYLE OF LINKS SECTION HOSTING/MOST POPULAR */
@@ -298,19 +312,20 @@ html,body{
 #container_hosting{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 650px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 0 3%;
+    /*padding: 0 3%;*/
     flex: 2; 
     margin-right: 5%;
 }
 
 .container_hosting_title{
     display: flex;
-    width: 100%;
+    margin-right: auto;
+    margin-left: 5%;
 }
 
 .container_hosting_cards{
@@ -318,8 +333,8 @@ html,body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 75%;
-    width: 100%;
+    height: 450px;
+    width: 90%;
 }
 
 .container_hosting_link_card{
@@ -327,8 +342,8 @@ html,body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 30%;
-    height: 40%;
+    width: 245px;
+    height: 200px;
     background-color: #ffffff;
     border-radius: 20px;
     padding: 4px;
@@ -350,7 +365,7 @@ html,body{
 }
 
 .container_hosting_info_name{
-    padding-left: 10%;
+    padding-left: 5%;
     height: auto;
     width: 100%;
 }
@@ -371,11 +386,14 @@ html,body{
 
 .see_more{
     display: flex;
+    margin-right: auto;
+    margin-left: 5%;
     border: none;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     margin-top: 25px;
+    background-color: #F2F2F2;
 }
 
 /* MOST POPULAR*/
@@ -383,7 +401,7 @@ html,body{
 .container_most_popular{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -399,15 +417,15 @@ html,body{
 }
 
 .most_pop_icon{
-    margin-top: 19.92px;
-    font-size: 1.3em;
+    
+    font-size: 1.5em;
 }
 
 .container_most_popular_cards{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 85%;
+    justify-content: space-between;
+    height: 76%;
     width: 90%;
 }
 
@@ -418,7 +436,7 @@ html,body{
     background-color: #ffffff;
     border-radius: 20px;
     padding: 4px;
-    height: 25%;
+    height: 145px;
     box-shadow: 2px 2px 10px #cecece;
 }
 /* CSS ANIMATION */
@@ -433,6 +451,7 @@ html,body{
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .container_most_popular_info_name{
@@ -442,7 +461,7 @@ html,body{
     align-items:flex-start;
     padding-left: 30px;
     height: 100%;
-    width: 50%;
+    width: 55%;
 }
 
 .container_most_popular_info_pic{
@@ -599,9 +618,9 @@ html,body{
     margin-right: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 71.11%;
-    height: 75%;
+    /*height: 120px;*/
     
 }
 .main_footer_container_category{
@@ -609,30 +628,35 @@ html,body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100%;
+    
+    /*100*/
     
 }
 .main_footer_container_list{
     list-style-type: none;
     padding: 0;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 30%;
+    
+   /* height: 39.2%;*/
 }
 .main_footer_container_list_about{
     list-style-type: none;
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 70%;
+   /*height: 65.2%;*/
+}
+.main_footer_container_list li, .main_footer_container_list_about li{
+    margin-bottom: 1em;
 }
 .main_footer_container_list a, .main_footer_container_list_about a{
     text-decoration: none;
     color: #000000;
 }
 .main_footer_container_category h2{
-    margin-top: 0;
+    /*margin-top: 0;*/
 }
 
