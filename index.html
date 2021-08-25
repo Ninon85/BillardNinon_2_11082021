@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css" media="all and (max-device-width: 480px)">
+    <link rel="stylesheet" href="mobile.css" media="all and (max-width: 480px)">
     <title>Reservia</title>
 </head>
 
@@ -40,15 +40,15 @@
                 <h2 class="search_title">Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p class="search_text">En plein centre ville ou en pleine nature</p>
                 <form class="search_form" method="GET" action="#">
-                    <p>
+                    <div>
                         <div class="search_form_icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <input type="search" name="search_form_input" id="search_form_input"
                             placeholder="Marseille, France" />
-                        <input class="search_form_button" type="button" value="Rechercher"/>
-                        <input class="search_form_button_icon" type="button" value="&#xf002;"/>
-                    </p>
+                        <input class="search_form_button" type="button" value="Rechercher" />
+                        <button class="search_form_button_icon" type="button"><i class="fas fa-search"></i></button>
+                    </div>
                 </form>
                 <!--filters-->
                 <div class="search_filter">
@@ -104,13 +104,13 @@
                                 <h3>Auberge de la Cannebière</h3>
                                 <p>Nuit à partir de <span class="word_bold">25€</span></p>
                                 <div class="hosting_grading">
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
-                                    </div>
-                                </div>    
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
+                                </div>
+                            </div>
                         </a>
                         <a class="container_hosting_link_card" href="#">
                             <div class="container_hosting_info">
@@ -118,17 +118,17 @@
                                     src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                     alt="Hôtel du port" />
                             </div>
-                                <div class="container_hosting_info_name">
-                                    <h3>Hôtel du port</h3>
-                                    <p>Nuit à partir de 52<span class="word_bold">€</span></p>
-                                    <div class="hosting_grading">
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                    </div>
+                            <div class="container_hosting_info_name">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de 52<span class="word_bold">€</span></p>
+                                <div class="hosting_grading">
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
                                 </div>
+                            </div>
                         </a>
                         <a class="container_hosting_link_card" href="#">
                             <div class="container_hosting_info">
@@ -136,17 +136,17 @@
                                     src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                     alt="Hôtel les mouettes" />
                             </div>
-                                <div class="container_hosting_info_name">
-                                    <h3>Hôtel les mouettes</h3>
-                                    <p>Nuit à partir de 76<span class="word_bold">€</span></p>
-                                    <div class="hosting_grading">
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
-                                    </div>
+                            <div class="container_hosting_info_name">
+                                <h3>Hôtel les mouettes</h3>
+                                <p>Nuit à partir de 76<span class="word_bold">€</span></p>
+                                <div class="hosting_grading">
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
                                 </div>
+                            </div>
                         </a>
                         <a class="container_hosting_link_card" href="#">
                             <div class="container_hosting_info">
@@ -154,17 +154,17 @@
                                     src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                     alt="Hôtel de la mer" />
                             </div>
-                                <div class="container_hosting_info_name">
-                                    <h3>Hôtel de la mer</h3>
-                                    <p>Nuit à partir de 46<span class="word_bold">€</span></p>
-                                    <div class="hosting_grading">
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
-                                    </div>
+                            <div class="container_hosting_info_name">
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46<span class="word_bold">€</span></p>
+                                <div class="hosting_grading">
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
                                 </div>
+                            </div>
                         </a>
                         <a class="container_hosting_link_card" href="#">
                             <div class="container_hosting_info">
@@ -172,17 +172,17 @@
                                     src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                     alt="Auberge le panier" />
                             </div>
-                                <div class="container_hosting_info_name">
-                                    <h3>Auberge le panier</h3>
-                                    <p>Nuit à partir de <span class="word_bold">23€</span></p>
-                                    <div class="hosting_grading">
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
-                                    </div>
+                            <div class="container_hosting_info_name">
+                                <h3>Auberge le panier</h3>
+                                <p>Nuit à partir de <span class="word_bold">23€</span></p>
+                                <div class="hosting_grading">
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_grey"> <i class="fas fa-star"></i></div>
                                 </div>
+                            </div>
                         </a>
                         <a class="container_hosting_link_card" href="#">
                             <div class="container_hosting_info">
@@ -190,17 +190,17 @@
                                     src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                     alt="Hôtel chez Amina" />
                             </div>
-                                <div class="container_hosting_info_name">
-                                    <h3>Hôtel chez Amina</h3>
-                                    <p>Nuit à partir de 96<span class="word_bold">€</span></p>
-                                    <div class="hosting_grading">
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                        <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
-                                    </div>
+                            <div class="container_hosting_info_name">
+                                <h3>Hôtel chez Amina</h3>
+                                <p>Nuit à partir de 96<span class="word_bold">€</span></p>
+                                <div class="hosting_grading">
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
+                                    <div class="hosting_grading_blue"> <i class="fas fa-star"></i></div>
                                 </div>
+                            </div>
                         </a>
                     </div>
                     <input class="see_more" type="button" value="Afficher plus">
@@ -356,7 +356,7 @@
                     <ul class="main_footer_container_list">
                         <li><a href="#">Charte qualité</a> </li>
                         <li><a href="#"> Soumettre votre hôtel</a></li>
-                     </ul>
+                    </ul>
                 </div>
                 <div class="main_footer_container_category">
                     <h2>Assistance</h2>

@@ -123,14 +123,14 @@ html,body{
 }
 
 .search_form_icon{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2;
     width: 2.5em;
     border-radius: 10px 0 0 10px;
     height: 2.81em;
-    font-size: 1rem; 
+    font-size: 1em; 
 }
 
 #search_form_input{
@@ -155,6 +155,7 @@ html,body{
 }
 
 .search_form_button{
+    display: inline-flex;
     border: none;
     background-color: #0065fc;
     border-radius: 0 10px 10px 0;
