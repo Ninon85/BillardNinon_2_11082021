@@ -70,11 +70,11 @@ body {
     align-items: center;
     border: none;
     background-color: #0065fc;
-    border-radius: 10px;
+    border-radius: 13px;
     color: #ffffff;
     height: 2.81em;
     padding: 0.31em;
-    width: 3.18em;
+    width: 2.81em;
     font-size: 1em;
     cursor: pointer;
 }
@@ -104,7 +104,7 @@ body {
 /* HOSTING AND MOST POPULAR */
 .container_hosting_n_Pop {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-right: 0;
