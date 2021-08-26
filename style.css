@@ -118,7 +118,7 @@ html,body{
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    width: 100%;
+    width: auto;
     margin-top: 20px;
 }
 
