@@ -6,7 +6,7 @@ body {
 
 #main-wrapper {
     margin: auto;
-    width: 375px;
+    width: 100%;
 }
 
 /* HEADER */
@@ -24,7 +24,7 @@ body {
 .main_header_nav {
     order: 3;
     width: 100%;
-    margin-left: unset;
+    margin-left: 0;
 }
 
 /* SIGN UP */
@@ -64,8 +64,12 @@ body {
     width: 3.18em;
 }
 
+#search_form_input {
+    width: 61.33%;
+}
+
 .search_form_button_icon {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     border: none;
@@ -97,64 +101,69 @@ body {
     margin-top: 0;
 }
 
-/* HOSTING AND MOST POPULAR */
+/* HOSTING AND POP */
 .container_hosting_n_Pop {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
     width: 100%;
-    margin-right: 0;
     margin-left: 0;
+    margin-right: 0;
     height: 1990px;
+
 }
 
-/* SECTION HOSTING */
+/* HOSTING */
 #container_hosting {
+    width: 100%;
     margin-right: 0;
-    flex: 0;
-    padding: 0;
-    height: auto;
+    flex: none;
+    height: 1400px;
+    width: 100%;
+    border-radius: 0;
     order: 2;
     background-color: #ffffff;
-    border-radius: 0;
-    width: 100%;
-}
 
-.container_hosting_title {
-    margin-right: auto;
-    margin-left: 5%;
 }
 
 .container_hosting_cards {
-    display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 1250px;
-    width: 100%;
     flex-wrap: nowrap;
+    height: 1250px;
+
 }
 
 .container_hosting_link_card {
     width: 90%;
+    height: 200px;
 }
 
 .see_more {
-    margin-right: auto;
-    margin-left: 5%;
     background-color: #ffffff;
 }
 
-/*SECTION MOST POPULAR */
+/* MOST POPULAR */
 .container_most_popular {
-    height: 590px;
     border-radius: 0;
     flex: none;
+    height: 590px;
     width: 100%;
+    order: 1;
+}
+
+.container_most_popular_title {
+    width: 90%;
 }
 
 .container_most_popular_cards {
     height: 455px;
+}
+
+.container_most_popular_link-card {
+    width: 90%;
+    height: 145px;
 }
 
 /* SECTION ACTIVITIES */
@@ -172,7 +181,7 @@ body {
 .activities_link_width {
     width: 100%;
     height: auto;
-    padding: 0;
+
 }
 
 .activities_container_column {
@@ -190,7 +199,7 @@ body {
 
 /* FOOTER */
 .main_footer {
-    height: 480px;
+    height: 485px;
     margin-top: 10%;
 }
 
