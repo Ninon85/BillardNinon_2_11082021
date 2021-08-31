@@ -374,6 +374,7 @@ body {
 .container_hosting_info_name {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding-left: 5%;
     height: 49%;
     width: 100%;
@@ -541,7 +542,8 @@ body {
     align-items: flex-start;
     border-radius: 20px;
     padding: 3px;
-    box-shadow: 2px 2px 2px #F2F2F2;
+    box-shadow: 2px 2px 10px #cecece;
+    /*box-shadow: 2px 2px 2px #F2F2F2;*/
     text-decoration: none;
     color: #000000;
 }
